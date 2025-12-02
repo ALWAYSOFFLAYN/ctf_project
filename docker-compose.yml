@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ctf-app:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./folder:/var/www/html/folder:rw,z  # /admin is 403, but flag inside still viewable..
