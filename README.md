@@ -1,3 +1,10 @@
+#### To start the ctf, you have to build the container
+`docker build -t ctf .`
+#### run it
+`docker run -d -p 8080:80 sqli-ctf`
+#### and access it on `http://localhost:8080/`
+
+---
 # CTF structure
 
 ### index.html 
@@ -14,3 +21,4 @@
 
 ### /admin
 - directory contains uploaded by admin files
+
